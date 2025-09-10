@@ -33,9 +33,9 @@ The original plugin uses recursive DFS, which can get slow on large projects.
 ---
 ## Install
 ```shell
-npm i -D @fastdeps/circular-dependency-plugin
+npm i -D fast-circular-dependency-webpack-plugin
 # or
-pnpm add -D @fastdeps/circular-dependency-plugin
+pnpm add -D fast-circular-dependency-webpack-plugin
 ```
 
 ---
@@ -51,7 +51,7 @@ pnpm add -D @fastdeps/circular-dependency-plugin
 
 ```js
 // webpack.config.js
-const FastCircularDependencyPlugin = require('@fastdeps/circular-dependency-plugin')
+const FastCircularDependencyPlugin = require('fast-circular-dependency-webpack-plugin')
 
 module.exports = {
   entry: "./src/index",
@@ -77,7 +77,7 @@ module.exports = {
 Supports the same lifecycle hooks as the original plugin:
 ```jsx
 // webpack.config.js
-const FastCircularDependencyPlugin = require('@fastdeps/circular-dependency-plugin')
+const FastCircularDependencyPlugin = require('fast-circular-dependency-webpack-plugin')
 
 module.exports = {
   entry: "./src/index",

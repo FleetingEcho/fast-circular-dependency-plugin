@@ -1,5 +1,5 @@
 {
-  "name": "@fastdeps/fast-circular-dependency-plugin",
+  "name": "fast-circular-dependency-webpack-plugin",
   "main": "index.js",
   "devDependencies": {
     "jest": "^22.4.2",
