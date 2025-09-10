@@ -1,5 +1,5 @@
 {
-  "name": "circular-dependency-plugin",
+  "name": "@fastdeps/fast-circular-dependency-plugin",
   "main": "index.js",
   "devDependencies": {
     "jest": "^22.4.2",
@@ -12,10 +12,10 @@
   "peerDependencies": {
     "webpack": ">=4.0.1"
   },
-  "description": "Detect modules with circular dependencies when bundling with webpack.",
-  "version": "5.2.2",
+  "description": "Fast circular dependency detection for Webpack builds, fully compatible with the original plugin.",
+  "version": "1.0.0",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=14"
   },
   "scripts": {
     "test": "jest"
@@ -25,19 +25,39 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aackerman/circular-dependency-plugin.git"
+    "url": "git+https://github.com/FleetingEcho/fast-circular-dependency-plugin.git"
   },
-  "author": "",
+  "author": "Tanner",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aackerman/circular-dependency-plugin/issues"
+    "url": "https://github.com/FleetingEcho/fast-circular-dependency-plugin/issues"
   },
-  "homepage": "https://github.com/aackerman/circular-dependency-plugin#readme",
+  "homepage": "https://github.com/FleetingEcho/fast-circular-dependency-plugin#readme",
   "jest": {
     "testMatch": [
       "**/?(*.)(spec|test).js?(x)"
     ],
     "testEnvironment": "jsdom",
     "testURL": "http://localhost/"
-  }
+  },
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "circular",
+    "dependency",
+    "tarjan",
+    "scc",
+    "build"
+  ]
 }

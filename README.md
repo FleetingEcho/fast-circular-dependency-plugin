@@ -31,6 +31,14 @@ The original plugin uses recursive DFS, which can get slow on large projects.
    - Includes a minimal fallback mechanism to avoid missing cycles.
 
 ---
+## Install
+```shell
+npm i -D @fastdeps/circular-dependency-plugin
+# or
+pnpm add -D @fastdeps/circular-dependency-plugin
+```
+
+---
 
 ## Webpack Compatibility
 - ✅ Webpack 4.0.1+
