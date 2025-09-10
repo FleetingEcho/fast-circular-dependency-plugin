@@ -51,7 +51,7 @@ pnpm add -D @fastdeps/circular-dependency-plugin
 
 ```js
 // webpack.config.js
-const FastCircularDependencyPlugin = require('fast-circular-dependency-plugin')
+const FastCircularDependencyPlugin = require('@fastdeps/circular-dependency-plugin')
 
 module.exports = {
   entry: "./src/index",
@@ -77,7 +77,7 @@ module.exports = {
 Supports the same lifecycle hooks as the original plugin:
 ```jsx
 // webpack.config.js
-const FastCircularDependencyPlugin = require('fast-circular-dependency-plugin')
+const FastCircularDependencyPlugin = require('@fastdeps/circular-dependency-plugin')
 
 module.exports = {
   entry: "./src/index",

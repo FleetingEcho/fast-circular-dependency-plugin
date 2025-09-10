@@ -20,9 +20,6 @@
   "scripts": {
     "test": "jest"
   },
-  "files": [
-    "index.js"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FleetingEcho/fast-circular-dependency-plugin.git"
@@ -40,17 +37,14 @@
     "testEnvironment": "jsdom",
     "testURL": "http://localhost/"
   },
-  "type": "commonjs",
-  "exports": {
-    ".": {
-      "require": "./index.js",
-      "default": "./index.js"
-    }
-  },
   "sideEffects": false,
   "publishConfig": {
     "access": "public"
   },
+  "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "webpack",
     "plugin",
