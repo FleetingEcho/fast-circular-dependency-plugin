@@ -1,6 +1,19 @@
 const path = require('path');
 const PluginTitle = 'FastCircularDependencyPlugin';
 
+/**
+ * @typedef {Object} FastCircularDependencyPluginOptions
+ * @property {RegExp} [exclude]
+ * @property {RegExp} [include]
+ * @property {boolean} [failOnError]
+ * @property {boolean} [allowAsyncCycles]
+ * @property {string} [cwd]
+ * @property {(args: { compilation: any }) => void} [onStart]
+ * @property {(args: { module: any, paths: string[], compilation: any }) => void} [onDetected]
+ * @property {(args: { compilation: any }) => void} [onEnd]
+ */
+
+/** @param {FastCircularDependencyPluginOptions} [options] */
 class FastCircularDependencyPlugin {
   constructor(options = {}) {
     this.options = {
