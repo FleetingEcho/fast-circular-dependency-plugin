@@ -95,7 +95,9 @@ module.exports = {
 ```
 
 ✅ Drop-in replacement for the original plugin.
+
 ✅ Full API compatibility with all existing options and lifecycle hooks.
+
 ✅ Much faster on large projects thanks to Tarjan’s algorithm.
 
 
